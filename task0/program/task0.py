@@ -1,6 +1,5 @@
 import os
 import matplotlib.pyplot as plt
-!pip install japanize_matplotlib
 import japanize_matplotlib
 import pandas as pd
 
