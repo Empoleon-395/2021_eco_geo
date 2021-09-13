@@ -29,7 +29,7 @@ fig.savefig("../data/rank_size.png")
 ###線形関係の検証
 ##相関係数の計算
 corcoef=np.corrcoef(x=df["pop_log"],y=df["rank_log"])[0,1]
-print(corcoef)
+print("=============================================\n相関係数は",corcoef)
 ##2次の項を説明変数に含めた際の回帰結果
 X=pd.DataFrame({"pop_log^1":df["pop_log"],
                 "pop_log^2":np.square(df["pop_log"])})
